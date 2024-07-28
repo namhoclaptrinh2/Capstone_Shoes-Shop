@@ -117,3 +117,188 @@
     }
   }
 }
+.carousel {
+  height: 100vh;
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(/assets/img/carousel2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: max-content;
+    
+    .content_left {
+      img {
+        height: 400px;
+        width: 800px;
+        object-fit: contain;
+        margin-bottom: 90px;
+      }
+    }
+    .content_right {
+      h3 {
+        font-family: Inter;
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 48.41px;
+        text-align: left;
+      }
+      p {
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 24.2px;
+        text-align: left;
+        margin-bottom: 20px;
+      }
+      button {
+        background-color: $color-primary;
+        padding: 10px 15px;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 24.2px;
+        text-align: left;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.product {
+  .container {
+    margin: 0 auto;
+    .title {
+      font-family: Inter;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 48.41px;
+      text-align: center;
+      margin-bottom: 100px;
+    }
+    .card {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // width: 30.33%;
+        // border: 1px solid black;
+        background-color: #f8f8f8;
+        // height: 369px;
+        width: 334px;
+
+        img {
+          width: 220px;
+          height: 156px;
+          // top: 45px;
+          // left: 57px;
+          margin: 0 auto;
+          gap: 0px;
+          opacity: 0px;
+        }
+        h1 {
+          font-family: Inter;
+          font-size: 24px;
+          font-weight: 300;
+          line-height: 30.05px;
+          // text-align: left;
+          padding-left: 15px;
+        }
+        a {
+          font-family: Inter;
+          font-size: 15px;
+          font-weight: 300;
+          line-height: 24.2px;
+          // text-align: left;
+          padding-left: 15px;
+        }
+        .item_bot {
+          display: flex;
+          justify-content: space-around;
+          width: 100%;
+          button {
+            // border: 1px solid black;
+            width: 55%;
+            padding: 15px 20px;
+            background-color: #e1b067;
+            font-weight: 600;
+          }
+          p {
+            // border: 1px solid black;
+            width: 45%;
+            padding: 15px 20px;
+            background-color: #dedddc;
+            text-align: center;
+            font-family: Inter;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 29.05px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  // margin: 0 auto;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    .footer1 {
+      display: flex;
+      justify-content: center;
+
+      padding: 20px;
+      background-color: #f8f8f8;
+
+      .bottom {
+        display: flex;
+        flex-direction: column;
+        width: 33.33%;
+        padding-left: 150px;
+        // text-align: center;
+        // margin: 0 100px;
+        .h1 {
+          margin-bottom: 10px;
+        }
+        a {
+          margin-bottom: 5px;
+        }
+        .button {
+          color: palevioletred;
+        }
+      }
+    }
+    .footer2 {
+      display: flex;
+      justify-content: center;
+      background-color: #dedddc;
+      padding: 20px 0;
+      .bottom {
+        display: flex;
+        flex-direction: column;
+        width: 33.33%;
+        padding-left: 150px;
+        // text-align: center;
+        .h1 {
+          margin-bottom: 10px;
+        }
+        p {
+          margin-bottom: 5px;
+        }
+        .button {
+          color: palevioletred;
+        }
+      }
+    }
+  }
+}
