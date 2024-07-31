@@ -1,12 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-<<<<<<< HEAD
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-=======
   box-sizing: border-box;
->>>>>>> thinh
   text-decoration: none;
   outline: none;
   border: none;
@@ -22,9 +17,6 @@ body, html {
   max-width: 1280px;
   margin: 0 auto;
 }
-<<<<<<< HEAD
-/*# sourceMappingURL=index.css.map */
-=======
 
 .header .container .navi-top {
   display: flex;
@@ -269,4 +261,3 @@ body, html {
 .footer .container .footer2 .bottom .button {
   color: palevioletred;
 }/*# sourceMappingURL=index.css.map */
->>>>>>> thinh
