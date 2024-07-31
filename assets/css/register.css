@@ -1,0 +1,98 @@
+.container-re {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.container-re h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+.container-re .register {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.container-re .register .left-column,
+.container-re .register .right-column {
+  display: flex;
+  flex-direction: column;
+}
+.container-re .register .left-column input,
+.container-re .register .right-column input {
+  margin-bottom: 15px;
+  font-size: 2em;
+  transition: all 0.1s;
+  border-bottom: 2px solid #AE18E2;
+  height: 51px;
+  top: 218px;
+  left: 696px;
+  gap: 0px;
+  opacity: 0px;
+}
+.container-re .register .left-column input::-moz-placeholder, .container-re .register .right-column input::-moz-placeholder {
+  font-size: 2rem;
+}
+.container-re .register .left-column input::placeholder,
+.container-re .register .right-column input::placeholder {
+  font-size: 2rem;
+}
+.container-re .register .left-column input:hover,
+.container-re .register .right-column input:hover {
+  border: 2px solid #AE18E2;
+  border-radius: 5px;
+}
+.container-re .register .left-column input:focus,
+.container-re .register .right-column input:focus {
+  border-color: #AE18E2;
+  outline: none;
+}
+.container-re .register .gender {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+  font-size: 2rem;
+}
+.container-re .register .gender label {
+  margin-right: 10px;
+}
+.container-re .register .gender label:hover {
+  text-decoration-color: #AE18E2;
+}
+.container-re .register .gender input[type=radio] {
+  margin: 5px 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #fff;
+  border: 2px solid #ccc;
+}
+.container-re .register .gender input[type=radio]:checked {
+  background-color: #AE18E2;
+  border-color: #ccc;
+}
+.container-re .register .gender input[type=radio]:hover {
+  border: 2px solid #AE18E2;
+}
+.container-re .submit-button {
+  align-self: flex-end;
+  margin-right: 15rem;
+  background-color: #AE18E2;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 2em;
+  transition: all 0.3s;
+}
+.container-re .submit-button:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=register.css.map */
