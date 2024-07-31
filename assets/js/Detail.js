@@ -8,8 +8,8 @@ const getDetail = async function() {
         const htmlString = `
             <div class="container product-detail">
     <div class="row">
-        <div class="col-md-6 detail-left">
-            <img id="product-image" src="${product.image}" alt="Product Image" class="img-fluid rounded">
+        <div class="col-md-6 detail-left ">
+            <img id="product-image" src="${product.image}" alt="Product Image" class="img-fluid rounded" >
         </div>
         <div class="col-md-6 detail-right">
             <h2 class="prod-name" id="product-name">${product.name}</h2>
