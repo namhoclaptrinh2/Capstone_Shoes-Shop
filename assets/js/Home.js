@@ -15,7 +15,7 @@ const getProductAPI = async function () {
                     <h1>${data.name}</h1>
                     <a href="">short description...</a>
                     <div class="item_bot">
-                      <button class="buy-now" data-product-id="${data.id}"><a href="/assets/pages/detail.html">Buy now</a></button>
+                      <button class="buy-now" data-product-id="${data.id}"><a href="./detail.html"/>Buy now</a></button>
                       <p>${data.price}$</p>
                     </div>
     </div>`;
