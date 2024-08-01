@@ -53,6 +53,7 @@ body, html {
   padding: 20px;
 }
 .header .container .navi-bottom .menu a {
+  text-decoration: none;
   margin-right: 25px;
   position: relative;
   transition: all 0.5s;
@@ -84,7 +85,7 @@ body, html {
   }
   .header .container .navi-bottom {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     text-align: center;
   }
   .header .container .navi-bottom .menu {
@@ -159,6 +160,7 @@ body, html {
   margin-bottom: 100px;
 }
 .product .container .card {
+  border: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

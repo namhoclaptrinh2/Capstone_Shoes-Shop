@@ -1,3 +1,4 @@
+// import axios from 'axios';
 const getProductAPI = async function () {
   const card = document.getElementById("product-list");
   // console.log(card)
@@ -15,7 +16,7 @@ const getProductAPI = async function () {
                     <h1>${data.name}</h1>
                     <a href="">short description...</a>
                     <div class="item_bot">
-                      <button class="buy-now" data-product-id="${data.id}"><a href="./detail.html"/>Buy now</a></button>
+                      <button class="buy-now" data-product-id="${data.id}"><a href="/detail.html?id=${data.id}"/>Buy now</a></button>
                       <p>${data.price}$</p>
                     </div>
     </div>`;
@@ -27,13 +28,13 @@ const getProductAPI = async function () {
 getProductAPI();
 
 const getDetail = async function () {
-  const detail = document.getElementById("product-detail");
+  const urlDetail = new URLSearchParams(window.location.search);
+  const productId = urlDetail.get('id');
 
-  const response = await axios.get(
-    "https://shop.cyberlearn.vn/api/Product/getbyid?id=1"
-  );
+  const response = await axios.get(`https://shop.cyberlearn.vn/api/Product/getbyid?id=${productId}`);
   const product = response.data.content;
-
+  // console.log(product);
+  const detail = document.getElementById("product-detail");
   const htmlString = `
           <div class="product-detail">
         <div class="container">
@@ -64,14 +65,12 @@ const getDetail = async function () {
 
       `;
 
-  detail.innerHTML = htmlString;
+      detail.innerHTML = htmlString;
 };
-
 getDetail();
 
 document.querySelector('.submit-button').onclick = async function (e) {
   e.preventDefault(); 
-  
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
   const passConfirm = document.getElementById('passConfirm').value;

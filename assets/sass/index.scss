@@ -46,6 +46,7 @@
         padding: 20px;
 
         a {
+          text-decoration: none;
           margin-right: 25px;
           position: relative;
           transition: all 0.5s;
@@ -97,7 +98,7 @@
 
       .navi-bottom {
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         text-align: center;
         .menu {
           flex-direction: column;
@@ -179,6 +180,7 @@
       margin-bottom: 100px;
     }
     .card {
+      border: none;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -303,5 +305,3 @@
     }
   }
 }
-
-
