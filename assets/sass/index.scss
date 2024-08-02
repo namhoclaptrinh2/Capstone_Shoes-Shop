@@ -214,12 +214,16 @@
           padding-left: 15px;
         }
         a {
+          color: #000000;
           font-family: Inter;
           font-size: 15px;
           font-weight: 300;
           line-height: 24.2px;
           // text-align: left;
           padding-left: 15px;
+          &:hover{
+            color: #000000;
+          }
         }
         .item_bot {
           display: flex;

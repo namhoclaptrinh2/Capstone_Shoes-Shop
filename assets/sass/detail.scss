@@ -1,5 +1,125 @@
 @import "./base";
 @import "./variable";
+.header {
+  .container {
+    .navi-top {
+      display: flex;
+      justify-content: space-between;
+      background-color: $color-black;
+      padding: 10px 20px;
+      .logo {
+        img {
+          width: 116px;
+          height: 32px;
+        }
+      }
+      .login {
+        font-weight: bold;
+        display: flex;
+        gap: 25px;
+        align-items: center;
+
+        i {
+          color: $color-white;
+          font-size: 15px;
+          // margin-left: 15px;
+        }
+        a {
+          text-decoration: none;
+          color: $color-white;
+          font-size: 15px;
+          //   margin-left: 25px;
+        }
+        #bars {
+          // margin-left: 25px;
+          display: none;
+        }
+      }
+    }
+    .navi-bottom {
+      .menu {
+        display: flex;
+
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 20px;
+        padding: 20px;
+
+        a {
+          text-decoration: none;
+          margin-right: 25px;
+          position: relative;
+          transition: all 0.5s;
+          color: $color-black;
+          &:hover {
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: -5px;
+              left: 50%;
+              transform: translateX(-50%);
+              width: 100%;
+              height: 1px;
+              //   border-radius: 50%;
+              background-color: black;
+            }
+          }
+        }
+        a.active {
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 1px;
+            //   border-radius: 50%;
+            background-color: black;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .navi-top {
+        .logo {
+        }
+        .login {
+          i {
+          }
+          a {
+          }
+          #bars {
+            display: block;
+          }
+        }
+      }
+
+      .navi-bottom {
+        display: flex;
+        justify-content: flex-end;
+        text-align: center;
+        .menu {
+          flex-direction: column;
+          width: 100px;
+          padding: 0;
+          align-items: center;
+          justify-content: end;
+          a {
+            margin-right: 0;
+            width: max-content;
+          }
+          a.active {
+            &::after {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .product-detail {
   padding-top: 20px;
   padding-bottom: 40px;
@@ -128,6 +248,136 @@
           color: #fff8f8;
           font-size: 1.5rem;
           text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.product {
+  .container {
+    // margin: 0 auto;
+    .title {
+      font-family: Inter;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 48.41px;
+      text-align: center;
+      margin-bottom: 100px;
+    }
+    .card {
+      border: none;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 20px;
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #f8f8f8;
+        width: 100%; // Đặt width thành 100% để card chiếm hết không gian của cột
+
+        img {
+          width: 220px;
+          height: 156px;
+          margin: 0 auto;
+        }
+        h1 {
+          font-family: Inter;
+          font-size: 24px;
+          font-weight: 300;
+          line-height: 30.05px;
+          padding-left: 15px;
+        }
+        a {
+          color: #000000;
+          text-decoration: none;
+          font-family: Inter;
+          font-size: 15px;
+          font-weight: 300;
+          line-height: 24.2px;
+          padding-left: 15px;
+        }
+        .item_bot {
+          display: flex;
+          justify-content: space-around;
+          width: 100%;
+          button {
+            width: 55%;
+            padding: 15px 20px;
+            background-color: #e1b067;
+            font-weight: 600px;
+          }
+          p {
+            width: 45%;
+            margin: auto;
+            padding: 15px 20px;
+            background-color: #dedddc;
+            text-align: center;
+            font-family: Inter;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 29.05px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  // margin: 0 auto;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    .footer1 {
+      display: flex;
+      justify-content: center;
+
+      padding: 20px;
+      background-color: #f8f8f8;
+
+      .bottom {
+        display: flex;
+        flex-direction: column;
+        width: 33.33%;
+        padding-left: 150px;
+        // text-align: center;
+        // margin: 0 100px;
+        .h1 {
+          margin-bottom: 10px;
+        }
+        a {
+          color: #000000;
+          margin-bottom: 5px;
+        }
+        .button {
+          color: palevioletred;
+        }
+      }
+    }
+    .footer2 {
+      display: flex;
+      justify-content: center;
+      background-color: #dedddc;
+      padding: 20px 0;
+      .bottom {
+        display: flex;
+        flex-direction: column;
+        width: 33.33%;
+        padding-left: 150px;
+        // text-align: center;
+        .h1 {
+          margin-bottom: 10px;
+        }
+        p {
+          margin-bottom: 5px;
+        }
+        .button {
+          color: palevioletred;
         }
       }
     }

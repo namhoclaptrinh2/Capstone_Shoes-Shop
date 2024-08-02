@@ -10,7 +10,7 @@
   text-align: start;
   margin-bottom: 20px;
   font-size: 2rem;
-  color: #007bff;
+  color: #F8B653;
 }
 .cart-container .cart-table {
   width: 100%;
@@ -42,7 +42,7 @@
 }
 .cart-container .cart-table tbody tr td button {
   border: none;
-  background-color: #007bff;
+  background-color: #F8B653;
   color: white;
   padding: 5px 10px;
   border-radius: 5px;
@@ -65,7 +65,7 @@
   width: 15%;
   padding: 15px;
   margin-top: 20px;
-  background-color: #007bff;
+  background-color: #F8B653;
   color: white;
   border: none;
   border-radius: 5px;
