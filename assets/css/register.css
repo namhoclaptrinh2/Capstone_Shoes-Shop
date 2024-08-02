@@ -1,30 +1,51 @@
 .container-re {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
 }
+
 .container-re h1 {
   text-align: center;
   margin-bottom: 20px;
   font-size: 2em;
 }
+
 .container-re .register {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
 }
+
 .container-re .register .left-column,
 .container-re .register .right-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .container-re .register .left-column input,
 .container-re .register .right-column input {
   margin-bottom: 15px;
   font-size: 2em;
+  -webkit-transition: all 0.1s;
   transition: all 0.1s;
   border-bottom: 2px solid #AE18E2;
   height: 51px;
@@ -33,36 +54,60 @@
   gap: 0px;
   opacity: 0px;
 }
-.container-re .register .left-column input::-moz-placeholder, .container-re .register .right-column input::-moz-placeholder {
+
+.container-re .register .left-column input::-webkit-input-placeholder,
+.container-re .register .right-column input::-webkit-input-placeholder {
   font-size: 2rem;
 }
+
+.container-re .register .left-column input:-ms-input-placeholder,
+.container-re .register .right-column input:-ms-input-placeholder {
+  font-size: 2rem;
+}
+
+.container-re .register .left-column input::-ms-input-placeholder,
+.container-re .register .right-column input::-ms-input-placeholder {
+  font-size: 2rem;
+}
+
 .container-re .register .left-column input::placeholder,
 .container-re .register .right-column input::placeholder {
   font-size: 2rem;
 }
+
 .container-re .register .left-column input:hover,
 .container-re .register .right-column input:hover {
   border: 2px solid #AE18E2;
   border-radius: 5px;
 }
+
 .container-re .register .left-column input:focus,
 .container-re .register .right-column input:focus {
   border-color: #AE18E2;
   outline: none;
 }
+
 .container-re .register .gender {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 18px;
   font-size: 2rem;
 }
+
 .container-re .register .gender label {
   margin-right: 10px;
 }
+
 .container-re .register .gender label:hover {
-  text-decoration-color: #AE18E2;
+  -webkit-text-decoration-color: #AE18E2;
+          text-decoration-color: #AE18E2;
 }
-.container-re .register .gender input[type=radio] {
+
+.container-re .register .gender input[type="radio"] {
   margin: 5px 5px;
   width: 20px;
   height: 20px;
@@ -74,15 +119,19 @@
   background-color: #fff;
   border: 2px solid #ccc;
 }
-.container-re .register .gender input[type=radio]:checked {
+
+.container-re .register .gender input[type="radio"]:checked {
   background-color: #AE18E2;
   border-color: #ccc;
 }
-.container-re .register .gender input[type=radio]:hover {
+
+.container-re .register .gender input[type="radio"]:hover {
   border: 2px solid #AE18E2;
 }
+
 .container-re .submit-button {
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   margin-right: 15rem;
   background-color: #AE18E2;
   color: #fff;
@@ -91,8 +140,12 @@
   cursor: pointer;
   border-radius: 5px;
   font-size: 2em;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+
 .container-re .submit-button:hover {
-  transform: scale(1.1);
-}/*# sourceMappingURL=register.css.map */
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/*# sourceMappingURL=register.css.map */

@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-decoration: none;
   outline: none;
   border: none;
@@ -19,84 +20,119 @@ body, html {
 }
 
 .header .container .navi-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #000;
   padding: 10px 20px;
 }
+
 .header .container .navi-top .logo img {
   width: 116px;
   height: 32px;
 }
+
 .header .container .navi-top .login {
   font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 25px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .header .container .navi-top .login i {
   color: #fff;
   font-size: 15px;
 }
+
 .header .container .navi-top .login a {
   color: #fff;
   font-size: 15px;
 }
+
 .header .container .navi-top .login #bars {
   display: none;
 }
+
 .header .container .navi-bottom .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-family: "Inter";
   font-weight: 400;
   font-size: 20px;
   padding: 20px;
 }
+
 .header .container .navi-bottom .menu a {
   text-decoration: none;
   margin-right: 25px;
   position: relative;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   color: #000;
 }
+
 .header .container .navi-bottom .menu a:hover::after {
   content: "";
   position: absolute;
   bottom: -5px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 100%;
   height: 1px;
   background-color: black;
 }
+
 .header .container .navi-bottom .menu a.active::after {
   content: "";
   position: absolute;
   bottom: -5px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 100%;
   height: 1px;
   background-color: black;
 }
+
 @media screen and (max-width: 768px) {
   .header .container .navi-top .login #bars {
     display: block;
   }
   .header .container .navi-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     text-align: center;
   }
   .header .container .navi-bottom .menu {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100px;
     padding: 0;
-    align-items: center;
-    justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
   }
   .header .container .navi-bottom .menu a {
     margin-right: 0;
+    width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
   }
@@ -105,16 +141,24 @@ body, html {
 .carousel {
   height: 100vh;
 }
+
 .carousel .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-image: url(/assets/img/carousel2.png);
   background-repeat: no-repeat;
   background-size: cover;
+  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
 }
+
 .carousel .container .content_left img {
   height: 400px;
   width: 800px;
@@ -122,6 +166,7 @@ body, html {
      object-fit: contain;
   margin-bottom: 90px;
 }
+
 .carousel .container .content_right h3 {
   font-family: Inter;
   font-size: 40px;
@@ -129,6 +174,7 @@ body, html {
   line-height: 48.41px;
   text-align: left;
 }
+
 .carousel .container .content_right p {
   font-family: Inter;
   font-size: 20px;
@@ -137,6 +183,7 @@ body, html {
   text-align: left;
   margin-bottom: 20px;
 }
+
 .carousel .container .content_right button {
   background-color: #F8B653;
   padding: 10px 15px;
@@ -151,6 +198,7 @@ body, html {
 .product .container {
   margin: 0 auto;
 }
+
 .product .container .title {
   font-family: Inter;
   font-size: 40px;
@@ -159,20 +207,35 @@ body, html {
   text-align: center;
   margin-bottom: 100px;
 }
+
 .product .container .card {
   border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 20px;
 }
+
 .product .container .card .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #f8f8f8;
   width: 334px;
 }
+
 .product .container .card .item img {
   width: 220px;
   height: 156px;
@@ -180,6 +243,7 @@ body, html {
   gap: 0px;
   opacity: 0px;
 }
+
 .product .container .card .item h1 {
   font-family: Inter;
   font-size: 24px;
@@ -187,6 +251,7 @@ body, html {
   line-height: 30.05px;
   padding-left: 15px;
 }
+
 .product .container .card .item a {
   color: #000000;
   font-family: Inter;
@@ -195,20 +260,27 @@ body, html {
   line-height: 24.2px;
   padding-left: 15px;
 }
+
 .product .container .card .item a:hover {
   color: #000000;
 }
+
 .product .container .card .item .item_bot {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%;
 }
+
 .product .container .card .item .item_bot button {
   width: 55%;
   padding: 15px 20px;
   background-color: #e1b067;
   font-weight: 600;
 }
+
 .product .container .card .item .item_bot p {
   width: 45%;
   padding: 15px 20px;
@@ -221,50 +293,84 @@ body, html {
 }
 
 .footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-top: 25px;
 }
+
 .footer .container .footer1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 20px;
   background-color: #f8f8f8;
 }
+
 .footer .container .footer1 .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 33.33%;
   padding-left: 150px;
 }
+
 .footer .container .footer1 .bottom .h1 {
   margin-bottom: 10px;
 }
+
 .footer .container .footer1 .bottom a {
   color: #000000;
   margin-bottom: 5px;
 }
+
 .footer .container .footer1 .bottom .button {
   color: palevioletred;
 }
+
 .footer .container .footer2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #dedddc;
-  padding: 20px 0;
+  padding: 20px;
 }
+
 .footer .container .footer2 .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 33.33%;
   padding-left: 150px;
 }
+
 .footer .container .footer2 .bottom .h1 {
   margin-bottom: 10px;
 }
+
 .footer .container .footer2 .bottom p {
   margin-bottom: 5px;
 }
+
 .footer .container .footer2 .bottom .button {
   color: palevioletred;
-}/*# sourceMappingURL=index.css.map */
+}
+/*# sourceMappingURL=index.css.map */
